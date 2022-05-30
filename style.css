@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Generales*/
+
+body {
+    font-family: 'Germania One', cursive;
+    background-position: 100%;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio3.jpg");
+}
+h1 {
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+}
+img {
+    width: 120px;
+    height: 150px;
+}
+
+/* Navegador */
+
+.navBar {
+    padding: .5rem;
+    font-family:"DIN Condensed";
+    background-color: black;
+    font-size: 1.5rem;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+.textoNav {
+    list-style: none;
+    color: #f1f1f1;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoNav__hijo {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+    text-align: center;
+} 
+.textoNav__hijo:hover, .textoNav__hijo:focus {
+    background-size: 100% 2px;
+    color: rgb(255, 115, 0);
+}
+
+/* Varios */
+
+.section__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.section__titulo, .section__btn {
+    text-align: center;
+    color: white;
+    font-family:"DIN Condensed";
+    text-decoration: none;
+    
+}
+.section__titulo {
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+.section__btn {
+    width: 200px;
+    justify-content: center;
+    color: orange;
+    padding: 1.5rem 0rem;
+    font-size: 1.0rem;
+    border-style:solid;
+    border-width: 3px;
+    font-weight: 700;
+}
+.section__btn:hover{
+    background-color: orange;
+    color: black;
+    border: none;
+}
+.stein {
+    color: white;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
+}
+.tablas {
+    border-style:dashed;
+}
+.logo__stein {
+    display:none
+}
+
+/* Nuestras Cervezas */
+
+.cerveza {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 1rem; 
+    width: 100%;
+    text-align: center;
+}
+.cerveza__imagen {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+    width: 100%;    
+}
+.cerveza__nombre {
+    font-size: 4rem;
+    color: white;
+}
+.cerveza__texto {
+    font-size: 1.8rem;
+    color: orange;
+}
+.cerveza__nombre, .cerveza__texto {
+    font-family:'Germania One', cursive;
+    text-align: center; 
+}
+
+.grafico__cervezas {
+    background-image: url(img/cervezas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 2 / 3;
+    min-height: 20rem;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+    }
+
+    .footer__grid {
+        grid-row: 3 / 3;
+        grid-column: 1/ 4;
+    }
+    .cerveza__imagen {
+        max-width: 100%;
+        width: 40rem;
+        height: 20rem;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: #f1f1f1;
+    font-family:"DIN Condensed";
+    text-align: center;
+    font-size: 14px;
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Button WhatsApp */
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:55px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    background: white;
+    color: #20ba5a;
+}
+/* Medias Queries */
+
+@media (min-width: 600px) {
+
+    .section__titulo {
+        font-size: 100px;
+    }
+    .section__btn {
+        width: 500px;
+        font-size: 2.5rem;
+    }
+    nav .textoNav__hijo {
+        font-size:1rem;
+    }
+    .textoNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navBar {
+        margin-top: 2rem;
+    }
+    footer {
+        font-size: 30px ;
+    }
+    .logo__stein {
+        display: block;
+    }
+}
+@media (min-width: 1024px) {
+
+    nav .textoNav__hijo {
+        font-size: 1.7rem;
+    }
+}
+
+/* Formulario */
+
+.formulario {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    max-width: 500px;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.3rem;
+    display: block;
+}
+.formulario label {
+    color: white;
+}
+
+.formulario #comentario {
+    color: white;
+}
+
+.formulario p {
+    color: white;
+
+}
+.formulario input {
+    color: white
+}
+
+/* Nosotros */
+
+.nosotros {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 15rem;
+    width: 100%; 
+}
+.contenedor__nosotros p {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    padding-left: 1rem;
+}
+@media (min-width: 480px){
+    .nosotros {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedor__nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    }
+    .nosotros {
+    width: 40rem;
+    height: 20rem;
+    text-align: center;
+    }
+}
+
+/* La Fábrica */
+
+.fotos__fabrica {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    align-items: center;
+}
+.fabrica {
+    width: 100%;
+    height: 100%;
+}
+.fotos__fabrica p {
+    color: white;
+    font-family:"DIN Condensed";
+    font-weight: 100;
+    font-size: 30px;
+    text-align: justify;
+}
+.parrafo1 {
+    grid-row: 2 / 2;
+    padding: 0% 4%;
+}
+.parrafo2 {
+    padding: 0% 4%;
+}
+
+@media (min-width: 480px){
+    .fabrica {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (min-width: 768px) {
+    .fotos__fabrica {
+        grid-template-columns: 1fr 1fr;
+    }    
+    .fabrica {
+        width: 350px;
+        height: 350px;
+    }
+    .parrafo1 {
+        grid-row: 2 / 2;
+        padding: 0% 4%;
+    }
+    .parrafo2 {
+        padding: 0% 4%;
+    }
+}
+
+/* Productos */
+
+.producto {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 1rem; 
+    width: 100%;
+    text-align: center;
+}
+.producto__imagen {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+    width: 100%;    
+}
+.producto__nombre {
+    font-size: 4rem;
+    color: white;
+}
+.producto__texto {
+    font-size: 1.3rem;
+    color: orange;
+}
+.producto__nombre, .producto__texto {
+    font-family:'Germania One', cursive;
+    text-align: center; 
+}
+.grid__2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid__2 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        margin: 2rem;
+    }
+    .producto__imagen {
+        max-width: 100%;
+        width: 30rem;
+        height: 20rem;
+        padding: 2%;
+    }
+    .footer__producto {
+        grid-column: 1 / 3;
+        margin: 0%;
+    }
+}
