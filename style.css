@@ -17,18 +17,25 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio3.jpg");
+    width: 100%;
+    height: 100%;
 }
 h1 {
     font-size: 100px;
     font-weight: 300;
     text-align: center;
 }
-img {
+/* img {
+    width: 120px;
+    height: 150px;
+} */
+
+/* Navegador */
+
+.logo__stein {
     width: 120px;
     height: 150px;
 }
-
-/* Navegador */
 
 .navBar {
     padding: .5rem;
@@ -79,22 +86,38 @@ img {
     text-align: center;
     font-size: 50px;
     font-weight: 500;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        color: orange;
+    }
+}
+
 .section__btn {
     width: 200px;
     justify-content: center;
     color: orange;
     padding: 1.5rem 0rem;
+    margin-top: 1rem;
     font-size: 1.0rem;
     border-style:solid;
     border-width: 3px;
     font-weight: 700;
+    transform: rotate(5deg);
 }
 .section__btn:hover{
     background-color: orange;
     color: black;
-    border: none;
-}
+    border-color: orange;
+    }
 .stein {
     color: white;
     border: solid;
@@ -114,20 +137,23 @@ img {
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 1rem; 
     width: 100%;
+    height: 100%;
     text-align: center;
+
 }
 .cerveza__imagen {
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
-    min-height: 20rem;
-    width: 100%;    
+    max-width: 100%;
+    /* width: 40rem;
+    height: 20rem;    */
 }
 .cerveza__nombre {
-    font-size: 4rem;
+    font-size: 2rem;
     color: white;
 }
 .cerveza__texto {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: orange;
 }
 .cerveza__nombre, .cerveza__texto {
@@ -140,7 +166,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     grid-row: 2 / 3;
-    min-height: 20rem;
+    min-height: auto;
 }
 
 /* Grid */
@@ -149,26 +175,38 @@ img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    margin-bottom: 2rem;    
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+    .grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 3rem;  
+    }
+}
+@media (min-width: 850px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-around;
-    }
-
-    .footer__grid {
-        grid-row: 3 / 3;
-        grid-column: 1/ 4;
+        margin: 2rem 3rem;  
     }
     .cerveza__imagen {
         max-width: 100%;
-        width: 40rem;
-        height: 20rem;
+    }
+    .cerveza__nombre {
+        font-size: 4rem;
+        color: white;
+    }
+    .cerveza__texto {
+        font-size: 2rem;
+        color: orange;
     }
 }
 
 /* Footer */
 
+.footer__inicio {
+    position: absolute;
+}
 footer {
     background-color: black;
     color: #f1f1f1;
@@ -179,16 +217,29 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+.footer__redes {
+    width: 2rem;
+    height: 2rem;
+}
+@media (min-width: 600px) {
+    .footer__redes {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 /* Button WhatsApp */
 
-.btn-wsp{
+.btn-wsp {
     position:fixed;
     width:60px;
     height:60px;
     line-height: 63px;
-    bottom:25px;
+    bottom:150px;
     right:25px;
     background:#25d366;
     color:#FFF;
@@ -197,9 +248,9 @@ footer {
     font-size:55px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index:100;
-    transition: all 300ms ease;
+    transition: all 3s ease;
 }
-.btn-wsp:hover{
+.btn-wsp:hover {
     text-decoration: none;
     background: white;
     color: #20ba5a;
@@ -222,12 +273,6 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    .navBar {
-        margin-top: 2rem;
-    }
-    footer {
-        font-size: 30px ;
     }
     .logo__stein {
         display: block;
@@ -267,6 +312,10 @@ footer {
     color: white
 }
 
+.formulario:focus {
+    color: orange;
+}
+
 /* Nosotros */
 
 .nosotros {
@@ -287,6 +336,7 @@ footer {
     width: 100%;
     height: 100%;
     text-align: center;
+    margin: 3rem;
     }
 }
 @media (min-width: 1024px) {
@@ -311,6 +361,7 @@ footer {
     justify-items: center;
     gap: 2rem;
     align-items: center;
+    margin-bottom: 20px;
 }
 .fabrica {
     width: 100%;
@@ -396,9 +447,5 @@ footer {
         width: 30rem;
         height: 20rem;
         padding: 2%;
-    }
-    .footer__producto {
-        grid-column: 1 / 3;
-        margin: 0%;
     }
 }
