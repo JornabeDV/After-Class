@@ -25,10 +25,6 @@ h1 {
     font-weight: 300;
     text-align: center;
 }
-/* img {
-    width: 120px;
-    height: 150px;
-} */
 
 /* Navegador */
 
@@ -72,7 +68,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 .section__titulo, .section__btn {
     text-align: center;
@@ -202,35 +198,7 @@ h1 {
     }
 }
 
-/* Footer */
 
-.footer__inicio {
-    position: absolute;
-}
-footer {
-    background-color: black;
-    color: #f1f1f1;
-    font-family:"DIN Condensed";
-    text-align: center;
-    font-size: 14px;
-    padding: 2% 2% 2% 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-}
-.footer__redes {
-    width: 2rem;
-    height: 2rem;
-}
-@media (min-width: 600px) {
-    .footer__redes {
-        width: 4rem;
-        height: 4rem;
-    }
-}
 
 /* Button WhatsApp */
 
@@ -295,6 +263,7 @@ footer {
     text-align: center;
     margin-top: 0.3rem;
     display: block;
+    margin-bottom: 3rem;
 }
 .formulario label {
     color: white;
@@ -321,30 +290,33 @@ footer {
 .nosotros {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 15rem;
-    width: 100%; 
+    width: 100%;
+    height: 100%; 
+    margin-bottom: 2rem;
 }
 .contenedor__nosotros p {
     color: white;
     font-size: 20px;
     font-weight: 100;
     text-align: justify;
-    padding-left: 1rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
 }
 @media (min-width: 480px){
     .nosotros {
     width: 100%;
     height: 100%;
     text-align: center;
-    margin: 3rem;
-    }
+       }
 }
 @media (min-width: 1024px) {
     .contenedor__nosotros {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10%;
+    gap: 4rem;
+    margin: 3rem;
     }
     .nosotros {
     width: 40rem;
@@ -361,7 +333,7 @@ footer {
     justify-items: center;
     gap: 2rem;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
 }
 .fabrica {
     width: 100%;
@@ -371,12 +343,13 @@ footer {
     color: white;
     font-family:"DIN Condensed";
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
     text-align: justify;
 }
 .parrafo1 {
     grid-row: 2 / 2;
     padding: 0% 4%;
+   
 }
 .parrafo2 {
     padding: 0% 4%;
@@ -416,8 +389,7 @@ footer {
 .producto__imagen {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 20rem;
-    width: 100%;    
+    max-width: 100%;   
 }
 .producto__nombre {
     font-size: 4rem;
@@ -435,17 +407,45 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
     .grid__2 {
         grid-template-columns: repeat(2, 1fr);
-        justify-content: space-around;
-        margin: 2rem;
+        justify-content: center;
+        margin: 4rem;
+        gap: 4rem;
+        max-width: 1500px;
+        text-align: center;  
     }
     .producto__imagen {
         max-width: 100%;
-        width: 30rem;
-        height: 20rem;
-        padding: 2%;
+    }
+}
+/* Footer */
+
+footer {
+    background-color: black;
+    color: #f1f1f1;
+    font-family:"DIN Condensed";
+    text-align: center;
+    font-size: 14px;
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+.footer__redes {
+    width: 2rem;
+    height: 2rem;
+}
+@media (min-width: 600px) {
+    .footer__redes {
+        width: 4rem;
+        height: 4rem;
     }
 }
