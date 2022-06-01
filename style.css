@@ -16,7 +16,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/inicio3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/inicio3.jpeg");
     width: 100%;
     height: 100%;
 }
@@ -158,7 +158,7 @@ h1 {
 }
 
 .grafico__cervezas {
-    background-image: url(img/cervezas.jpg);
+    background-image: url(img/cervezas.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-row: 2 / 3;
