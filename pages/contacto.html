@@ -33,21 +33,21 @@
     <!-- Apertura Sección Contacto -->
     <section>
         <h2 class="section__titulo">CONTACTO</h2>
-            <form class="formulario" action="#">
-                <label class=formulario for="nombre_apellido">NOMBRE:</label>
+            <form class="formulario__titulo" action="#">
+                <label class="formulario" for="nombre_apellido">NOMBRE:</label>
                 <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre Completo" />
                 <label class=formulario for="e-mail">E-MAIL:</label>
                 <input type="text" id="e-mail" name="e-mail" placeholder="Correo Electrónico" />
                 <label class=formulario for="telefono">TELEFONO:</label>
                 <input type="text" id="telefono" name="telefono" placeholder="Celular/Teléfono"/>    
-                <p>MOTIVO DE LA CONSULTA:</p>                              
-                <input type="checkbox" name="Ventas"><p>VENTAS</p> 
-                <input type="checkbox" name="Visita a la Fábrica"> <p>VISITA A LA FABRICA</p> 
-                <input type="checkbox" name="Otro"> <p>OTRO</p>  
-                <label class=formulario for="comentarios">CONSULTA:</label>
+                <p class="consulta__1">MOTIVO DE LA CONSULTA:</p>                              
+                <input type="checkbox" name="Ventas"><p class="consulta">VENTAS</p> 
+                <input type="checkbox" name="Visita a la Fábrica"> <p class="consulta">VISITA A LA FABRICA</p> 
+                <input type="checkbox" name="Otro"> <p class="consulta">OTRO</p>  
+                <label class="consulta__2" for="comentarios">CONSULTA:</label>
                 <textarea id="comentarios" placeholder="Describa su consulta"></textarea>
-                <input class=formulario type="submit" value="Enviar Información">
-                <input class=formulario type="reset" value="Restablecer Información">
+                <input class="formulario__info" type="submit" value="Enviar Información">
+                <input class="formulario__info" type="reset" value="Restablecer Información">
             </form>
     </section>
     <!-- Cierre Sección Contacto -->
