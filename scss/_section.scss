@@ -1,0 +1,43 @@
+section {
+    .section__titulo {
+        text-align: center;
+        color: $color;
+        font-family: 'Teko', sans-serif;
+        text-decoration: none;
+        font-size: 50px;
+        font-weight: 500;
+        animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+        margin: 3rem;
+    }
+    .contenedor__nosotros {
+        color: $color;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: justify;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3rem;
+        .nosotros {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%; 
+            margin-bottom: 2rem;
+            transition: 2s; 
+            &:hover {filter: sepia(60%);}
+        }
+        .nosotros__parrafo {
+            color: $color;
+            font-size: 20px;
+            font-weight: 100;
+            text-align: justify;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 3rem;
+            padding: 1rem;
+        }
+    }
+    
+}

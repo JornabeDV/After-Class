@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Germania One', cursive;
+  background-position: 100%;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio3.jpeg");
+  width: 100%;
+  height: 100%; }
+
+header .navBar {
+  padding: .5rem;
+  font-family: 'Teko', sans-serif;
+  background-color: black;
+  font-size: 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  header .navBar .textoNav {
+    list-style: none;
+    color: #f1f1f1;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .navBar .textoNav .logo__stein {
+      width: 120px;
+      height: 150px; }
+    header .navBar .textoNav .textoNav__hijo {
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: .5em 1em;
+      text-align: center; }
+    header .navBar .textoNav .textoNav__hijo:hover, header .navBar .textoNav .textoNav__hijo:focus {
+      background-size: 100% 2px;
+      color: #ff7300; }
+
+section .section__titulo {
+  text-align: center;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 500;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+  margin: 3rem; }
+
+section .contenedor__nosotros {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem; }
+  section .contenedor__nosotros .nosotros {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+    transition: 2s; }
+    section .contenedor__nosotros .nosotros:hover {
+      filter: sepia(60%); }
+  section .contenedor__nosotros .nosotros__parrafo {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+    padding: 1rem; }
+
+@media (min-width: 480px) {
+  section .nosotros {
+    width: 100%;
+    height: 100%;
+    text-align: center; } }
+
+@media (min-width: 1024px) {
+  section .contenedor__nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 3rem; }
+  section .nosotros {
+    width: 40rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 1%; } }
+
+footer {
+  background-color: black;
+  color: #f1f1f1;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  padding: 2% 2% 2% 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 0;
+  position: relative;
+  width: 100%; }
+  footer .footer__redes {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer; }
+  @media (min-width: 600px) {
+    footer .footer__redes {
+      width: 4rem;
+      height: 4rem; } }
