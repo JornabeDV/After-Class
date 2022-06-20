@@ -1,3 +1,11 @@
+$fooWid:(
+    wi1: 100%,
+    wi2: 2rem,
+);
+
+$wi1: map-get($fooWid, wi1);
+$wi2: map-get($fooWid, wi2);
+
 footer {
     background-color: black;
     color: #f1f1f1;
@@ -10,9 +18,9 @@ footer {
     justify-content: space-evenly;
     bottom: 0;
     position: relative;
-    width: 100%;
+    width: $wi1;
 .footer__redes {
-    width: 2rem;
+    width: $wi2;
     height: 2rem;
     cursor: pointer;
 }

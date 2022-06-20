@@ -1,3 +1,14 @@
+@mixin wiColor {
+    width: 100%;
+    color: $color;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    height: 100%;
+    margin-bottom: 3rem;   
+}
+
+
 section {
     .section__titulo {
         text-align: center;
@@ -12,13 +23,8 @@ section {
         margin: 3rem;
     }
     .contenedor__nosotros {
-        color: $color;
-        font-size: 20px;
-        font-weight: 100;
-        text-align: justify;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 3rem;
+        @include wiColor();
+
         .nosotros {
             background-size: cover;
             background-repeat: no-repeat;
@@ -29,13 +35,7 @@ section {
             &:hover {filter: sepia(60%);}
         }
         .nosotros__parrafo {
-            color: $color;
-            font-size: 20px;
-            font-weight: 100;
-            text-align: justify;
-            width: 100%;
-            height: 100%;
-            margin-bottom: 3rem;
+            @include wiColor();
             padding: 1rem;
         }
     }
