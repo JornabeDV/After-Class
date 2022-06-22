@@ -1,0 +1,63 @@
+// La Fábrica
+
+.fotos__fabrica {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    align-items: center;
+    margin: auto;
+    .fabrica {
+        @include wi-he;
+        transition:all .5s ease-in-out;
+        &:hover {
+            -webkit-transform: rotateY(180deg);
+            -webkit-transform-style: preserve-3d;
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+        }
+    }
+    .parrafo1 , .parrafo2 {
+        color: $color;
+        font-family: $fuente;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: justify;
+        padding: 0% 4%;
+        margin: 3rem 0;
+    }
+    .parrafo1 {
+        grid-row: 2 / 2;
+    }
+}
+
+//MediaQueries
+
+@media (min-width: 480px){
+    .fabrica {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 3%;
+    }
+}
+@media (min-width: 768px) {
+
+    .fotos__fabrica {
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        .fabrica {
+            max-width: 80%;
+            max-height: 80%;
+            }
+        .parrafo1 , .parrafo2 {
+            grid-row: 2 / 2;
+            padding: 0% 4%;
+            font-size: 30px;
+        }
+    }    
+}
+@media (min-width: 1024px) {
+    .fotos__fabrica {
+        width: 60%; 
+    }
+}

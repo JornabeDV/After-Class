@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Germania One', cursive;
+  font-family: "Germania One", cursive;
   background-position: 100%;
   background-image: no-repeat;
   background-image: fixed;
@@ -13,43 +13,19 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/inicio3.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio3.jpeg");
   width: 100%;
   height: 100%; }
 
-.textoNav, header .navBar .textoNav, header .navBar .textoNav .logo__stein {
-  list-style: none;
-  color: #f1f1f1;
-  font-weight: bolder;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+h1 {
+  font-size: 100px;
+  font-weight: 300;
+  text-align: center; }
 
-header .navBar {
-  padding: .5rem;
-  font-family: 'Teko', sans-serif;
-  background-color: black;
-  font-size: 1.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
-  header .navBar .textoNav .logo__stein {
-    height: 150px;
-    width: 120px;
-    display: none; }
-  header .navBar .textoNav .textoNav__hijo {
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: .5em 1em;
-    text-align: center; }
-    header .navBar .textoNav .textoNav__hijo:hover, header .navBar .textoNav .textoNav__hijo:focus {
-      background-size: 100% 2px;
-      color: #ff7300; }
-
-section .section__titulo {
+.section__titulo {
   text-align: center;
   color: white;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-decoration: none;
   font-size: 50px;
   font-weight: 500;
@@ -58,37 +34,402 @@ section .section__titulo {
   animation-iteration-count: initial;
   margin: 3rem; }
 
-section .contenedor__nosotros {
+@keyframes aparecer {
+  0% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1;
+    color: orange; } }
+
+@media (min-width: 600px) {
+  .section__titulo {
+    font-size: 100px; } }
+
+.navBar {
+  padding: .5rem;
+  font-family: "Teko", sans-serif;
+  background-color: black;
+  font-size: 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  .navBar #menu:checked ~ ul {
+    display: block; }
+  .navBar #menu {
+    display: none; }
+  .navBar .burguer {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1.5px solid orange;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 1px;
+    text-align: center;
+    user-select: none;
+    color: orange; }
+  .navBar .textoNav {
+    list-style: none;
+    color: #f1f1f1;
+    font-weight: bolder;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center; }
+    .navBar .textoNav .textoNav__hijo {
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: .5em 1em;
+      text-align: center; }
+      .navBar .textoNav .textoNav__hijo:hover, .navBar .textoNav .textoNav__hijo:focus {
+        background-size: 100% 2px;
+        color: #ff7300; }
+    .navBar .textoNav .logo__stein {
+      width: 120px;
+      height: 150px;
+      display: none; }
+
+@media (min-width: 600px) {
+  .navBar {
+    padding: 1rem 3rem; }
+    .navBar .textoNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .navBar .textoNav .logo__stein {
+        display: block; }
+    .navBar .burguer {
+      display: none; } }
+
+@media (min-width: 1024px) {
+  .navBar {
+    padding: 1rem 5rem; }
+    .navBar .textoNav__hijo {
+      font-size: 1.7rem; } }
+
+.stein {
+  color: white;
+  border: solid;
+  border-color: black;
+  border-width: 5px; }
+  .stein:hover {
+    background-color: black;
+    transition: 2s; }
+
+.section__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 300px; }
+  .section__texto .section__btn {
+    width: 200px;
+    justify-content: center;
+    color: orange;
+    padding: 1.5rem 0rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: 700;
+    transform: rotate(5deg);
+    text-align: center;
+    color: white;
+    font-family: "Teko", sans-serif;
+    text-decoration: none; }
+    .section__texto .section__btn:hover {
+      background-color: orange;
+      color: black;
+      border-color: orange;
+      transition: 2s; }
+
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 150px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 55px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 3s ease; }
+  .btn-wsp:hover {
+    text-decoration: none;
+    background: white;
+    color: #20ba5a; }
+
+@media (min-width: 600px) {
+  .section__btn {
+    width: 500px;
+    font-size: 2.5rem; } }
+
+.fotos__fabrica {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  align-items: center;
+  margin: auto; }
+  .fotos__fabrica .fabrica {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out; }
+    .fotos__fabrica .fabrica:hover {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d; }
+  .fotos__fabrica .parrafo1, .fotos__fabrica .parrafo2 {
+    color: white;
+    font-family: "Teko", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0% 4%;
+    margin: 3rem 0; }
+  .fotos__fabrica .parrafo1 {
+    grid-row: 2 / 2; }
+
+@media (min-width: 480px) {
+  .fabrica {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 3%; } }
+
+@media (min-width: 768px) {
+  .fotos__fabrica {
+    grid-template-columns: 1fr 1fr;
+    width: 85%; }
+    .fotos__fabrica .fabrica {
+      max-width: 80%;
+      max-height: 80%; }
+    .fotos__fabrica .parrafo1, .fotos__fabrica .parrafo2 {
+      grid-row: 2 / 2;
+      padding: 0% 4%;
+      font-size: 30px; } }
+
+@media (min-width: 1024px) {
+  .fotos__fabrica {
+    width: 60%; } }
+
+.contenedor__nosotros .nosotros {
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  transition: 2s; }
+  .contenedor__nosotros .nosotros:hover {
+    filter: sepia(60%); }
+
+.contenedor__nosotros .nosotros__parrafo {
+  padding: 1rem;
+  text-align: justify;
   color: white;
   font-size: 20px;
-  font-weight: 100;
-  text-align: justify;
-  height: 100%;
-  margin-bottom: 3rem; }
-  section .contenedor__nosotros .nosotros {
+  font-weight: 100; }
+
+@media (min-width: 480px) {
+  .contenedor__nosotros .nosotros {
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin: auto;
+    display: block; } }
+
+@media (min-width: 1300px) {
+  .contenedor__nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 3rem;
+    align-items: center; }
+    .contenedor__nosotros .nosotros {
+      width: 40rem;
+      height: 20rem;
+      text-align: center; } }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem; }
+  .grid .cerveza {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .grid .cerveza .cerveza__imagen {
+      background-size: auto;
+      background-repeat: no-repeat;
+      max-width: 100%; }
+    .grid .cerveza .cerveza__nombre {
+      font-size: 2rem;
+      color: white; }
+    .grid .cerveza .cerveza__texto {
+      font-size: 1.2rem;
+      color: orange; }
+    .grid .cerveza .cerveza__nombre, .grid .cerveza .cerveza__texto {
+      font-family: "Germania One", cursive;
+      text-align: center; }
+  .grid .grafico__cervezas {
+    background-image: url(../img/cervezas.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: auto;
+    height: 400px;
+    grid-row: 2 / 3; }
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 3rem; }
+    .grid .cerveza {
+      -webkit-filter: blur(1px);
+      filter: blur(1px);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+      .grid .cerveza:hover {
+        -webkit-filter: blur(0);
+        filter: blur(0); }
+    .grid .grafico__cervezas {
+      height: auto; } }
+
+@media (min-width: 1180px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin: 2rem 3rem; }
+    .grid .cerveza .cerveza__imagen {
+      max-width: 100%; }
+    .grid .cerveza .cerveza__nombre {
+      font-size: 4rem;
+      color: white; }
+    .grid .cerveza .cerveza__texto {
+      font-size: 2rem;
+      color: orange; } }
+
+.grid__2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  text-align: center; }
+  .grid__2 .producto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 1rem;
     width: 100%;
-    height: 100%;
-    margin-bottom: 2rem;
-    transition: 2s; }
-    section .contenedor__nosotros .nosotros:hover {
-      filter: sepia(60%); }
-  section .contenedor__nosotros .nosotros__parrafo {
-    width: 100%;
+    text-align: center;
+    overflow: hidden; }
+    .grid__2 .producto .producto__imagen {
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      transition: all .5s ease-in-out; }
+    .grid__2 .producto .producto__nombre {
+      font-size: 2rem;
+      color: white;
+      font-family: "Germania One", cursive;
+      text-align: center; }
+    .grid__2 .producto .producto__texto {
+      font-size: 1rem;
+      color: orange;
+      font-family: "Germania One", cursive;
+      text-align: center; }
+  .grid__2 .producto:hover .producto__imagen {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8); }
+
+@media (min-width: 700px) {
+  .grid__2 {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 5rem;
+    gap: 2rem;
+    max-width: 2000px;
+    text-align: center; }
+    .grid__2 .producto .producto__imagen {
+      max-width: 100%; }
+    .grid__2 .producto .producto__nombre {
+      font-size: 3rem; } }
+
+@media (min-width: 1024px) {
+  .grid__2 {
+    gap: 2rem 0; }
+    .grid__2 .producto {
+      width: 60%; }
+      .grid__2 .producto .producto__nombre {
+        font-size: 4rem; }
+      .grid__2 .producto .producto__texto {
+        font-size: 1.4rem; } }
+
+.formulario__titulo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  max-width: 500px;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 6rem; }
+  .formulario__titulo .formulario, .formulario__titulo .consulta__2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin: auto;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: white;
+    font-size: 15px;
+    width: 70%;
+    padding: 1px; }
+  .formulario__titulo .formulario label, .formulario__titulo .formulario p {
+    color: white; }
+  .formulario__titulo input {
+    color: white;
+    margin: 1rem;
+    font-size: 15px; }
+  .formulario__titulo .formulario:focus {
+    color: orange; }
+  .formulario__titulo .consulta {
+    color: white;
+    margin: 1rem;
+    font-size: 15px; }
+  .formulario__titulo .consulta__1 {
     color: white;
     font-size: 20px;
-    font-weight: 100;
-    text-align: justify;
-    height: 100%;
-    margin-bottom: 3rem;
-    padding: 1rem; }
+    margin-top: 2rem; }
+  .formulario__titulo .consulta__2 {
+    margin-top: 3rem; }
+  .formulario__titulo .formulario__info {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: white;
+    font-size: 15px;
+    width: 70%;
+    padding: 0.3px;
+    width: 50%;
+    cursor: pointer;
+    border: none; }
+
+@media (min-width: 600px) {
+  .formulario, .consulta, .formulario__info, .consulta__2, input {
+    font-size: 20px; } }
 
 footer {
   background-color: black;
   color: #f1f1f1;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-align: center;
   font-size: 14px;
   padding: 2% 2% 2% 2%;
@@ -97,46 +438,17 @@ footer {
   justify-content: space-evenly;
   bottom: 0;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  margin-top: 200px; }
   footer .footer__redes {
     width: 2rem;
     height: 2rem;
     cursor: pointer; }
 
 @media (min-width: 600px) {
-  .section__titulo {
-    font-size: 100px; }
-  .section__btn {
-    width: 500px;
-    font-size: 2.5rem; }
-  nav .textoNav__hijo {
-    font-size: 1rem; }
-  .textoNav, header .navBar .textoNav, header .navBar .textoNav .logo__stein {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  .logo__stein {
-    display: block; } }
-
-@media (min-width: 1024px) {
-  nav .textoNav__hijo {
-    font-size: 1.7rem; } }
-
-@media (min-width: 480px) {
-  .nosotros {
-    width: 100%;
-    height: 100%;
-    text-align: center; } }
-
-@media (min-width: 1024px) {
-  .contenedor__nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    margin: 3rem; }
-  .nosotros {
-    width: 40rem;
-    height: 20rem;
-    text-align: center;
-    border-radius: 1%; } }
+  footer {
+    position: relative;
+    margin-top: 5%; }
+    footer .footer__redes {
+      width: 4rem;
+      height: 4rem; } }

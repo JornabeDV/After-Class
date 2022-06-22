@@ -1,15 +1,9 @@
-$fooWid:(
-    wi1: 100%,
-    wi2: 2rem,
-);
-
-$wi1: map-get($fooWid, wi1);
-$wi2: map-get($fooWid, wi2);
+// Footer
 
 footer {
-    background-color: black;
+    background-color: $color3;
     color: #f1f1f1;
-    font-family: 'Teko', sans-serif;
+    font-family: $fuente;
     text-align: center;
     font-size: 14px;
     padding: 2% 2% 2% 2%;
@@ -19,9 +13,20 @@ footer {
     bottom: 0;
     position: relative;
     width: $wi1;
-.footer__redes {
+    margin-top: 200px;
+    .footer__redes {
     width: $wi2;
     height: 2rem;
     cursor: pointer;
+    }
 }
+@media (min-width: 600px) {
+    footer {
+        position: relative;
+        margin-top: 5%;
+    .footer__redes {
+        width: $wi3;
+        height: $wi3;
+        }
+    }
 }

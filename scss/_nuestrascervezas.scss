@@ -1,0 +1,84 @@
+// NuestrasCervezas
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem; 
+    .cerveza {
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        padding: 1rem; 
+        @include wi-he;
+        text-align: center;
+        .cerveza__imagen {
+            background-size: auto;
+            background-repeat: no-repeat;
+            max-width: 100%;
+        }
+        .cerveza__nombre {
+            font-size: 2rem;
+            color: $color;
+        }
+        .cerveza__texto {
+            font-size: 1.2rem;
+            color: $color2;
+        }
+        .cerveza__nombre , .cerveza__texto {
+            font-family: $fuente2;
+            text-align: center; 
+        }
+    }    
+    .grafico__cervezas {
+        background-image: url(../img/cervezas.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: auto;
+        height: 400px;
+        grid-row: 2 / 3;
+    }    
+}
+
+//MediaQueries
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 3rem;
+        .cerveza {
+            -webkit-filter: blur(1px);
+            filter: blur(1px);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            &:hover {
+                -webkit-filter: blur(0);
+                filter: blur(0);
+            }
+        }
+        .grafico__cervezas {
+            height: auto;
+        }
+    }
+
+}
+
+@media (min-width: 1180px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        margin: 2rem 3rem;
+        .cerveza {
+            .cerveza__imagen {
+                max-width: 100%;
+            }
+            .cerveza__nombre {
+                font-size: 4rem;
+                color: $color;
+            }
+            .cerveza__texto {
+                font-size: 2rem;
+                color: $color2;
+            }
+        }  
+
+    }
+}

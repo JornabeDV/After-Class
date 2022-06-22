@@ -1,0 +1,47 @@
+//Nosotros
+
+.contenedor__nosotros {
+    .nosotros {
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include sizes (100% , 100%);
+        margin-bottom: 2rem;
+        transition: 2s;  
+        &:hover {
+            filter: sepia(60%);
+        }
+    }
+    .nosotros__parrafo {
+        @include just-pad;
+        color: $color;
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
+
+//MediaQueries
+
+@media (min-width: 480px) {
+    .contenedor__nosotros {
+        .nosotros {
+        @include sizes (70% , 70%);
+        text-align: center;
+        margin: auto;
+        display: block;
+        }
+    }
+}
+@media (min-width: 1300px) {
+    .contenedor__nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    gap: 4rem;
+    margin: 3rem;
+    align-items: center;
+    .nosotros {
+        width: 40rem;
+        height: 20rem;
+        text-align: center;
+        }
+    }
+}

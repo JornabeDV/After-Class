@@ -1,6 +1,12 @@
-@import "globales";
+//Style SCSS
+
 @import "variables";
+@import "globales";
 @import "header";
-@import "section";
+@import "index";
+@import "lafabrica";
+@import "nosotros";
+@import "nuestrascervezas";
+@import "productos";
+@import "formulario";
 @import "footer";
-@import "mediasqueries";
