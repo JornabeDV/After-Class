@@ -164,7 +164,7 @@ h1 {
     color: #20ba5a; }
 
 @media (min-width: 600px) {
-  .section__btn {
+  .section__texto .section__btn {
     width: 500px;
     font-size: 2.5rem; } }
 
