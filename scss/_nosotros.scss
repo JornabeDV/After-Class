@@ -39,8 +39,7 @@
     margin: 3rem;
     align-items: center;
     .nosotros {
-        width: 40rem;
-        height: 20rem;
+        @include wi-he;
         text-align: center;
         }
     }
