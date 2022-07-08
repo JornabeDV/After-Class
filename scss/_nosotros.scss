@@ -6,7 +6,8 @@
         background-repeat: no-repeat;
         @include sizes (100% , 100%);
         margin-bottom: 2rem;
-        transition: 2s;  
+        transition: 2s;
+        box-shadow: 0 0px 10px 10px #111, 0 0 20px #ccc inset;  
         &:hover {
             filter: sepia(60%);
         }
@@ -16,6 +17,7 @@
         color: $color;
         font-size: 20px;
         font-weight: 100;
+        line-height: 40px;
     }
 }
 
@@ -28,6 +30,8 @@
         text-align: center;
         margin: auto;
         display: block;
+        border-radius: 5px;
+        box-shadow: 0 0px 10px 10px #111, 0 0 20px #ccc inset;
         }
     }
 }
@@ -38,6 +42,9 @@
     gap: 4rem;
     margin: 3rem;
     align-items: center;
+    .nosotros__parrafo {
+        font-size: 24px;
+    }
     .nosotros {
         @include wi-he;
         text-align: center;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Elaboración y Comercialización de Cerveza Artesanal">
-    <meta name="keywords" content="Artesanal, Cerveza, Elaboración, Bares, Negocio, Cervecería">
+    <meta name="keywords" content="Artesanal, Cerveza, Elaboración, Bares, Negocio, Cervecería,Contacto, Búsqueda, Ubicación, Celular">
     <link rel="icon" href="../img/favicon.ico">
     <title>Contacto-Cerveza Artesanal Stein</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,67 +20,122 @@
     <!-- Apertura Navegación -->    
     <header>
         <nav class="navBar">
-            <input type="checkbox" id="menu">
-            <label class="burguer" for="menu"> ☰ </label>
-            <ul class="textoNav">
-                <img class="logo__stein" src="../img/logo-sin-fondo.png" alt="logo">
-                <li><a class="textoNav__hijo" href="../index.html">INICIO</a></li>
-                <li><a class="textoNav__hijo" href="nuestras-cervezas.html">NUESTRAS-CERVEZAS</a></li>
-                <li><a class="textoNav__hijo" href="nosotros.html">NOSOTROS</a></li>
-                <li><a class="textoNav__hijo" href="productos.html">PRODUCTOS</a></li>
-                <li><a class="textoNav__hijo" href="la-fabrica.html">LA FÁBRICA</a></li>
-                <li><a class="textoNav__hijo" href="contacto.html">CONTACTO</a></li>
-            </ul>
+            <img class="logo__stein" src="../img/logo-sin-fondo.png" alt="logo">
+            <div class="navBar2">
+                <input type="checkbox" id="menu">
+                <label class="burguer" for="menu"> ☰ </label>
+                <ul class="textoNav">
+                    <li><a class="textoNav__hijo" href="../index.html">INICIO</a></li>
+                    <li><a class="textoNav__hijo" href="./nuestras-cervezas.html">NUESTRAS CERVEZAS</a></li>
+                    <li><a class="textoNav__hijo" href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a class="textoNav__hijo" href="./productos.html">PRODUCTOS</a></li>
+                    <li><a class="textoNav__hijo" href="./la-fabrica.html">LA FÁBRICA</a></li>
+                    <li><a class="textoNav__hijo" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
         </nav>
     </header>  
     <!-- Apertura Navegación -->  
 
-    <!-- Apertura Sección Contacto -->
-    <section>
+    <!-- Apertura Principal -->
+    <main>
         <h2 class="section__titulo">CONTACTO</h2>
-            <form class="formulario__titulo" action="#">
-                <label class="formulario" for="nombre_apellido">NOMBRE:</label>
-                <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre Completo" />
-                <label class=formulario for="e-mail">E-MAIL:</label>
-                <input type="text" id="e-mail" name="e-mail" placeholder="Correo Electrónico" />
-                <label class=formulario for="telefono">TELEFONO:</label>
-                <input type="text" id="telefono" name="telefono" placeholder="Celular/Teléfono"/>    
-                <p class="consulta__1">MOTIVO DE LA CONSULTA:</p>                              
-                <input type="checkbox" name="Ventas"><p class="consulta">VENTAS</p> 
-                <input type="checkbox" name="Visita a la Fábrica"> <p class="consulta">VISITA A LA FABRICA</p> 
-                <input type="checkbox" name="Otro"> <p class="consulta">OTRO</p>  
-                <label class="consulta__2" for="comentarios">CONSULTA:</label>
-                <textarea id="comentarios" placeholder="Describa su consulta"></textarea>
-                <input class="formulario__info" type="submit" value="Enviar Información">
-                <input class="formulario__info" type="reset" value="Restablecer Información">
-            </form>
-    </section>
-    <!-- Cierre Sección Contacto -->
+        <div class="contenido__principal">
+            <div class="contacto__formulario">
+                <form action="">
+                    <p>
+                        <label class="label__formulario">Nombre</label>
+                        <input type="text" name="Nombre Completo">
+                    </p>
+                    <p>
+                        <label class="label__formulario">Mail</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label class="label__formulario">Celular</label>
+                        <input type="tel" name="celular">
+                    </p>
+                    <p>
+                        <label class="label__formulario">Motivo</label>
+                        <input type="text" name="consulta">
+                    </p>
+                    <p class="block">
+                        <label class="label__formulario">Mensaje</label>
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>   
+                </form>                         
+            </div>
+            <div class="contacto__info">
+                <h3>Nuestros Datos!</h3>
+                <ul>
+                    <div class="contacto__info__logos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
+                        <li>299-5249409</li>
+                    </div>
+                    <div class="contacto__info__logos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>
+                        <li>Falucho 407 Sur Rivadavia San Juan</li>
+                    </div>
+                    <div class="contacto__info__logos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                        </svg>
+                        <li>cerveceriastein@gmail.com</li>
+                    </div>
+                </ul>
+                <div class="contacto__info__pie">
+                    <p> Responderemos a la brevedad! Salud! </p>
+                    <p> Stein-Cerveza Artesanal </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Cierre Principal -->
 
     <!-- Apertura Footer -->
-    <footer>
+    <footer class="footer__inicio">
         <div> 
-            <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg>   
+            <a href="https://www.facebook.com/cerveza.stein.12">
+                <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>   
             <h3>FACEBOOK</h3>
         </div>
         <div>
-            <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="4" y="4" width="16" height="16" rx="4" />
-                <circle cx="12" cy="12" r="3" />
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-            </svg>
+            <a href="https://www.instagram.com/cervezastein/">
+                <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+            </a>
             <h3>INSTAGRAM</h3>
         </div>
         <div>
-            <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="11" r="3" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-            </svg>
+            <a href="https://g.page/Cervezastein?share">
+                <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+            </a>
             <h3>UBICACION</h3>
         </div>
     </footer>

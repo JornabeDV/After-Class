@@ -32,7 +32,7 @@ h1 {
     font-weight: 500;
     animation-duration: 5s;
     animation-name: aparecer;
-    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
     margin: 3rem; 
 }
 @keyframes aparecer {

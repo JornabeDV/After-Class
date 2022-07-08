@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Elaboración y Comercialización de Cerveza Artesanal">
-    <meta name="keywords" content="Artesanal, Cerveza, Elaboración, Bares, Negocio, Cervecería">
+    <meta name="keywords" content="Artesanal, Cerveza, Elaboración, Bares, Negocio, Cervecería, Barriles, Barras, Envases">
     <link rel="icon" href="../img/favicon.ico">
     <title>Productos-Cerveza Artesanal Stein</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,29 +20,34 @@
     <!-- Apertura Navegación -->
     <header>
         <nav class="navBar">
-            <input type="checkbox" id="menu">
-            <label class="burguer" for="menu"> ☰ </label>
-            <ul class="textoNav">
-                <img class="logo__stein" src="../img/logo-sin-fondo.png" alt="logo">
-                <li><a class="textoNav__hijo" href="../index.html">INICIO</a></li>
-                <li><a class="textoNav__hijo" href="nuestras-cervezas.html">NUESTRAS-CERVEZAS</a></li>
-                <li><a class="textoNav__hijo" href="nosotros.html">NOSOTROS</a></li>
-                <li><a class="textoNav__hijo" href="productos.html">PRODUCTOS</a></li>
-                <li><a class="textoNav__hijo" href="la-fabrica.html">LA FÁBRICA</a></li>
-                <li><a class="textoNav__hijo" href="contacto.html">CONTACTO</a></li>
-            </ul>
+            <img class="logo__stein" src="../img/logo-sin-fondo.png" alt="logo">
+            <div class="navBar2">
+                <input type="checkbox" id="menu">
+                <label class="burguer" for="menu"> ☰ </label>
+                <ul class="textoNav">
+                    <li><a class="textoNav__hijo" href="../index.html">INICIO</a></li>
+                    <li><a class="textoNav__hijo" href="./nuestras-cervezas.html">NUESTRAS CERVEZAS</a></li>
+                    <li><a class="textoNav__hijo" href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a class="textoNav__hijo" href="./productos.html">PRODUCTOS</a></li>
+                    <li><a class="textoNav__hijo" href="./la-fabrica.html">LA FÁBRICA</a></li>
+                    <li><a class="textoNav__hijo" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
         </nav>
     </header>  
     <!-- Cierre Navegación -->
     
     <!-- Apertura Productos -->
-    <section>
+
+    <main>
         <h2 class="section__titulo">NUESTROS PRODUCTOS</h2>
         <div class="grid__2">
 
             <!-- Apertura Producto1 -->
             <div class="producto">
-                <img class="producto__imagen" src="../img/producto1.jpeg" alt="chopera">
+                <figure>
+                    <img class="producto__imagen" src="../img/producto1.jpeg" alt="chopera">
+                </figure>
                 <p class="producto__nombre">CHOPERA</p>
                 <p class="producto__texto">PRECIO:</p>
                 <p class="producto__texto">BLONDE, STOUT, IRISH RED: $4000</p>
@@ -52,7 +57,9 @@
 
             <!-- Apertura Producto2 -->
             <div class="producto">
-                <img class="producto__imagen" src="../img/producto2.jpeg" alt="chopera2">
+                <figure>
+                    <img class="producto__imagen" src="../img/producto2.jpeg" alt="chopera2">
+                </figure>
                 <p class="producto__nombre">CHOPERA PEQUEÑA</p>
                 <p class="producto__texto">PRECIO:</p>
                 <p class="producto__texto">BLONDE, STOUT, IRISH RED: $2000</p>
@@ -62,7 +69,9 @@
 
             <!-- Apertura Producto3 -->
             <div class="producto">
-                <img class="producto__imagen" src="../img/producto3.jpeg" alt="barra">
+                <figure>
+                    <img class="producto__imagen" src="../img/producto3.jpeg" alt="barra">
+                </figure>
                 <p class="producto__nombre">BARRA</p>
                 <p class="producto__texto">PRECIO:</p>
                 <p class="producto__texto">BLONDE, STOUT, IRISH RED: $4500</p>
@@ -72,7 +81,9 @@
 
             <!-- Apertura Producto4 -->
             <div class="producto">
-                <img class="producto__imagen" src="../img/producto4.jpeg" alt="Botella">
+                <figure>
+                    <img class="producto__imagen" src="../img/producto4.jpeg" alt="Botella">
+                </figure>
                 <p class="producto__nombre">BOTELLA</p>
                 <p class="producto__texto">PRECIO:</p>
                 <p class="producto__texto">BLONDE, STOUT, IRISH RED: $300</p>
@@ -81,33 +92,39 @@
             <!-- Cierre Producto4 -->
 
         </div>
-    </section>
+    </main>
     <!-- Cierre Productos -->
 
     <!-- Apertura Footer -->
     <footer class="footer__inicio">
         <div> 
-            <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg>   
+            <a href="https://www.facebook.com/cerveza.stein.12">
+                <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>   
             <h3>FACEBOOK</h3>
         </div>
         <div>
-            <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="4" y="4" width="16" height="16" rx="4" />
-                <circle cx="12" cy="12" r="3" />
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-            </svg>
+            <a href="https://www.instagram.com/cervezastein/">
+                <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+            </a>
             <h3>INSTAGRAM</h3>
         </div>
         <div>
-            <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="11" r="3" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-            </svg>
+            <a href="https://g.page/Cervezastein?share">
+                <svg class="footer__redes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+            </a>
             <h3>UBICACION</h3>
         </div>
     </footer>

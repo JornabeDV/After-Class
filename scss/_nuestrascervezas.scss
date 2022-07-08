@@ -45,13 +45,15 @@
         grid-template-columns: repeat(2, 1fr);
         margin: 2rem 3rem;
         .cerveza {
-            -webkit-filter: blur(1px);
-            filter: blur(1px);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-            &:hover {
+            .cerveza__imagen {
+                -webkit-filter: blur(1px);
+                filter: blur(1px);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                &:hover {
                 -webkit-filter: blur(0);
                 filter: blur(0);
+                }
             }
         }
         .grafico__cervezas {
