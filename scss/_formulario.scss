@@ -1,4 +1,4 @@
-//// Formulario
+// Formulario
 
 .contenido__principal {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
@@ -75,7 +75,7 @@
     }    
 }   
 
-////MediaQueries
+// MediaQueries
 
 @media (min-width: 480px) {
     .contenido__principal {
@@ -93,5 +93,4 @@
             max-width: 100px;
             }
     }
-
 }

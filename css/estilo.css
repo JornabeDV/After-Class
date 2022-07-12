@@ -188,7 +188,21 @@ h1 {
   box-shadow: 0 0px 10px 10px #111, 0 0 20px #ccc inset; }
 
 .carousel-control-prev, .carousel-control-next {
-  top: 25%; }
+  top: 50%; }
+
+@media (min-width: 600px) {
+  .img_fab {
+    width: 400px;
+    height: 650px; }
+  .carousel-control-prev, .carousel-control-next {
+    width: 20%; }
+    .carousel-control-prev .carousel-control-next-icon, .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon, .carousel-control-next .carousel-control-prev-icon {
+      width: 5rem;
+      height: 5rem; } }
+
+@media (min-width: 1000px) {
+  .carousel-control-prev, .carousel-control-next {
+    width: 50%; } }
 
 .contenedor__nosotros .nosotros {
   background-size: cover;

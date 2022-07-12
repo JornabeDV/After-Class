@@ -1,4 +1,4 @@
-//Nosotros
+// Nosotros
 
 .contenedor__nosotros {
     .nosotros {
@@ -21,17 +21,17 @@
     }
 }
 
-//MediaQueries
+// MediaQueries
 
 @media (min-width: 480px) {
     .contenedor__nosotros {
         .nosotros {
-        @include sizes (70% , 70%);
-        text-align: center;
-        margin: auto;
-        display: block;
-        border-radius: 5px;
-        box-shadow: 0 0px 10px 10px #111, 0 0 20px #ccc inset;
+            @include sizes (70% , 70%);
+            text-align: center;
+            margin: auto;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 0px 10px 10px #111, 0 0 20px #ccc inset;
         }
     }
 }
@@ -42,12 +42,12 @@
     gap: 4rem;
     margin: 3rem;
     align-items: center;
-    .nosotros__parrafo {
-        font-size: 24px;
-    }
-    .nosotros {
-        @include wi-he;
-        text-align: center;
+        .nosotros__parrafo {
+            font-size: 24px;
+        }
+        .nosotros {
+            @include wi-he;
+            text-align: center;
         }
     }
 }

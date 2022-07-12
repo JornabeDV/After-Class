@@ -1,4 +1,4 @@
-////Productos
+// Productos
 
 .grid__2 {
     display: grid;
@@ -39,7 +39,7 @@
     }
 }
 
-////MediaQueries
+// MediaQueries
 
 @media (min-width: 700px) {
     .grid__2 {
@@ -59,7 +59,7 @@
         }
     }
 }
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     .grid__2 {
         gap: 2rem 0;
         .producto {
@@ -69,5 +69,4 @@
             }
         }
     }
-
 }

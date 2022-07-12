@@ -44,6 +44,9 @@ h1 {
         color: $color2;
     }
 }
+
+// MediaQueries
+
 @media (min-width: 600px) {
     .section__titulo {
         font-size: 100px;

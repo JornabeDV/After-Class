@@ -1,17 +1,17 @@
 // Variables
 
-//Colores
+// Colores
 
 $color:white;
 $color2:orange;
 $color3:black;
 
-//Fuentes
+// Fuentes
 
 $fuente: 'Teko', sans-serif;
 $fuente2: 'Germania One', cursive;
 
-//Mixin
+// Mixin
 
 @mixin wi-he () {
     width: 100%;
@@ -27,7 +27,7 @@ $fuente2: 'Germania One', cursive;
     text-align: justify;
 } 
 
-//Maps
+// Maps
 
 $fooWid:(
     wi1: 100%,
