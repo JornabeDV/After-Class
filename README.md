@@ -1,6 +1,6 @@
 # Cerveza-Artesanal-Stein
 
-Info: Attractive and functional project designed with HTML, which was used to organize the content of elements such as headings, paragraphs, images and links. I also implemented pure CSS to control visual aspects such as colors, fonts, margins, and layouts.
+INFO: Attractive and functional project designed with HTML, which was used to organize the content of elements such as headings, paragraphs, images and links. I also implemented pure CSS to control visual aspects such as colors, fonts, margins, and layouts.
 
 DEPLOY: https://cerveceriastein.netlify.app/
 
